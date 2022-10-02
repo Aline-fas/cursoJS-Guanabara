@@ -14,12 +14,27 @@
     </style>
 </head>
 <body>
-    <h1>Iniciando estudos com DOM</h1>
+    <h1>Iniciando estudos com DOM </h1>
+        <h2>Document Object Model / Modelo de Documento por Objetos</h2>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
+    
     <script>
-        window.document.body
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        corpo.style.backgroundColor = 'black'
+        p1.style.color = 'blue' 
+        var d = window.document.getElementById('msg') // quando Elements estiver no plural use [], Element no singular nao precisa
+        //pode usar o comando da linha acima, mas o da linha abaixo é mais usado
+        //var d = window.document.querySelector('div#msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando'
+        var d = window.document.getE
+
+        // window.document.write(p1.innerHTML) 
+        // window.document.write(' Ola, Mundo! ')
+        // window.document.write(window.document.URL);
     </script>
 </body>
 </html>
